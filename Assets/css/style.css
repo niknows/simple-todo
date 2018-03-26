@@ -1,5 +1,15 @@
 #container {
-    background-color: lightgrey;
+    border: 2px solid lightgrey;
     width: 365px;
     margin: 0 auto;
+}
+
+/*Toggle Events*/
+.taskClicked {
+    color: lightgrey;
+    text-decoration: line-through;
+}
+
+li{
+    list-style: none;
 }
