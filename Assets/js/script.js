@@ -1,21 +1,21 @@
 // <li> task complete event
-$("li").on("click",function(){
-$(this).toggleClass("taskClicked");
-
+$("ul").on("click", "li", function(){
+    $(this).toggleClass("taskClicked");
 });
 
 // button X functioning
-$("span").click(function(evt){
-$(this).parent().fadeOut(300,function(){
-$(this).remove();
-});
-evt.stopPropagation();
+$("ul").on("click", "span", function(evt){
+    $(this).parent().fadeOut(300,function(){
+        $(this).remove();
+    });
+    evt.stopPropagation();
 });
 
 //add typed todo by hitting enter
-[type='text'
-$("input[type='text'").keypress("event", function(){
-if (event.which === 13){
-$("ul").append("<li><span>X</span>I am a new line</li>");
-}
+$("input[type='text']").keypress("event", function(){
+    if (event.which === 13){
+        var inputText = $(this).val();
+        $(this).val("");
+        $("ul").append("<li>"+"<span>X </span>"+inputText+"</li>");          
+    }
 });
