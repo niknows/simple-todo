@@ -16,6 +16,11 @@ $("input[type='text']").keypress("event", function(){
     if (event.which === 13){
         var inputText = $(this).val();
         $(this).val("");
-        $("ul").append("<li>"+"<span>X </span>"+inputText+"</li>");          
+        $("ul").append("<li>"+"<span>"+"<i class="+"\"fas fa-minus-square\">"+"</i>"+"</span>"+inputText+"</li>");          
     }
+});
+
+//input box toggle
+$("#plusIcon").click(function(){
+$("input[type='text'").fadeToggle(100);
 });
