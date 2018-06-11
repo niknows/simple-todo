@@ -8,6 +8,6 @@
 <li>You can remove a task;</li>
 <li>You can set a task as completed.</li>
 <ul>
-  
+<br> 
 <a href="https://niknows.github.io/simple-todo/">Give it a try</a>
 
