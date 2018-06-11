@@ -4,7 +4,7 @@
 
 <strong>Features:</strong>
 <ul>
-<li>You can add a task;</li
+  <li>You can add a task;</li>
 <li>You can remove a task;</li>
 <li>You can set a task as completed.</li>
 <ul>
